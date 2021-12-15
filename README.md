@@ -2,7 +2,7 @@
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://www.python.org/)
-[![ci tests](https://github.com/opendp/opendp-pytest/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/opendp/opendp-pytest/actions/workflows/smoke-test.yml?query=branch%3Amain)
+[![ci tests](https://github.com/opendp/opendp-pytorch/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/opendp/opendp-pytorch/actions/workflows/smoke-test.yml?query=branch%3Amain)
 
 OpenDP-PyTorch is an extension to the [OpenDP](https://github.com/opendp/opendp) library for 
 differentially private training of pytorch neural networks.
