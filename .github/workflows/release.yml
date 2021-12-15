@@ -1,0 +1,50 @@
+name: Release
+on:
+  release:
+    types:
+      - published
+env:
+  FEATURES: untrusted
+
+
+jobs:
+  credential-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if user is an administrator
+        uses: lannonbr/repo-permission-check-action@2.0.0
+        with:
+          permission: admin
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+          cache: pip
+
+  python-publish:
+    runs-on: ubuntu-20.04
+    env:
+      PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+          cache: pip
+
+      - name: Create Python package
+        run: bash tools/python_build.sh -i
+
+      - name: Publish Python package
+        run: |
+          pip install -r tools/requirements-publish_tool.txt
+          python tools/publish_tool.py python
