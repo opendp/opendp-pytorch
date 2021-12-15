@@ -1,8 +1,8 @@
-# OpenDP
+# OpenDP-PyTorch
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://www.python.org/)
-[![ci tests](https://github.com/opendp/opendp-pytest/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/opendp/opendp/actions/workflows/smoke-test.yml?query=branch%3Amain)
+[![ci tests](https://github.com/opendp/opendp-pytest/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/opendp/opendp-pytest/actions/workflows/smoke-test.yml?query=branch%3Amain)
 
 OpenDP-PyTorch is an extension to the [OpenDP](https://github.com/opendp/opendp) library for 
 differentially private training of pytorch neural networks.
@@ -12,10 +12,9 @@ open source software tools for analysis of private data.
 
 ## Status
 
-OpenDP is under development, and we expect to [release new versions](https://github.com/opendp/opendp/releases) frequently,
+OpenDP-PyTorch is under development, and we expect to [release new versions](https://github.com/opendp/opendp/releases) frequently,
 incorporating feedback and code contributions from the OpenDP Community.
-It's a work in progress, but it can already be used to build some applications and to prototype contributions that will expand its functionality.
-We welcome you to try it and look forward to feedback on the library! However, please be aware of the following limitations:
+This library is not ready to build privacy-sensitive applications.
 
 > OpenDP, like all real-world software, has both known and unknown issues.
 > If you intend to use OpenDP for a privacy-critical application, you should evaluate the impact of these issues on your use case.
@@ -25,19 +24,15 @@ We welcome you to try it and look forward to feedback on the library! However, p
 
 ## Installation
 
-The easiest way to install OpenDP is using `pip` (the [package installer for Python](https://pypi.org/project/pip/)):
+The easiest way to install OpenDP-PyTorch is using `pip` (the [package installer for Python](https://pypi.org/project/pip/)):
 
-    $ pip install opendp
+    $ pip install opendp-pytorch
 
 More information can be found in the [Getting Started section of the User Guide](https://docs.opendp.org/en/stable/user/getting-started.html).
 
 ## Documentation
 
-The full documentation for OpenDP is located at https://docs.opendp.org. Here are some helpful entry points:
-
-* [User Guide](https://docs.opendp.org/en/stable/user/index.html)
-* [Python API Docs](https://docs.opendp.org/en/stable/api/python/index.html)
-* [Developer Guide](https://docs.opendp.org/en/stable/developer/index.html)
+Documentation is not yet available for the PyTorch extension.
 
 ## Getting Help
 
