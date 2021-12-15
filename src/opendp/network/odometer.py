@@ -117,7 +117,7 @@ class BasePrivacyOdometer(object):
         if mechanism_name == 'laplace':
             return meas.make_base_laplace(scale, D=domain)
         if mechanism_name == 'gaussian':
-            return meas.make_base_gaussian(scale, analytic=True, D=domain)
+            return meas.make_base_analytic_gaussian(scale, D=domain)
 
     def clip_grad_(self, grad_instance, actual_norm):
         singletons = (1,) * (grad_instance.ndim - 1)
